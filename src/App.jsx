@@ -71,13 +71,15 @@ function App() {
 
       >
           
-        <div className="lg:flex justify-center items-center h-screen p-2">
-          <motion.div 
-            className="grid grid-cols-3 gap-0 h-90 "
-            variants={containerVariants}
-            initial="hidden"
-            animate="show"
-          >
+        <motion.div 
+          className="lg:flex justify-center flex-col items-center h-screen p-2"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
+          <h1 className=' text-center text-white text-4xl my-2'>Code-LA</h1>
+          <p className=' text-center text-white my-1'>This page was developed with the api <span className='font-bold'><a href="https://openweathermap.org/api" target="_blank">Open Weather</a></span></p>
+          <div className="grid grid-cols-3 gap-0 h-90 "> 
             <div className="box col-span-3 lg:col-span-2 m-1">
               <div className=" flex justify-center items-center h-full">
                 {component}
@@ -96,8 +98,8 @@ function App() {
               </div>
 
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     // </div>
   )
